@@ -6,8 +6,8 @@
  /* File created by MIDL compiler version 8.01.0628 */
 /* at Tue Jan 19 05:14:07 2038
  */
-/* Compiler settings for ..\..\..\..\Desktop\stringrpc.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0628 
+/* Compiler settings for LR4_1-master\LR4_1-master\ConsoleApplication7\stringrpc.idl:
+    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=IA64 8.01.0628 
     protocol : all , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -59,17 +59,22 @@ extern "C"{
 /* interface stringrpc */
 /* [version][uuid] */ 
 
-int CountVowels( 
+double Sin( 
     /* [in] */ handle_t hBinding,
-    /* [in][string] */ unsigned char *str);
+    /* [in] */ double x);
 
-int CountWords( 
+double Cos( 
     /* [in] */ handle_t hBinding,
-    /* [in][string] */ unsigned char *str);
+    /* [in] */ double x);
 
-boolean IsPalindrome( 
+double Sqrt( 
     /* [in] */ handle_t hBinding,
-    /* [in][string] */ unsigned char *str);
+    /* [in] */ double x);
+
+double Pow( 
+    /* [in] */ handle_t hBinding,
+    /* [in] */ double x,
+    /* [in] */ double y);
 
 
 

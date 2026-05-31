@@ -1,98 +1,58 @@
+#include <cmath>
+#include <cstdlib>
 #include <iostream>
 #include <rpc.h>
-#include <string>
-#include <algorithm>
-#include <cctype>
 
 #include "stringrpc.h"
 
 #pragma comment(lib, "Rpcrt4.lib")
-//Server
+
 using namespace std;
+
 void* __RPC_USER midl_user_allocate(size_t size)
 {
     return malloc(size);
 }
-RPC_STATUS CALLBACK SecurityCallback(RPC_IF_HANDLE,void*)
+
+void __RPC_USER midl_user_free(void* p)
+{
+    free(p);
+}
+
+RPC_STATUS CALLBACK SecurityCallback(RPC_IF_HANDLE, void*)
 {
     return RPC_S_OK;
 }
 
-extern "C" int CountVowels(
-    handle_t hBinding,
-    unsigned char* str)
+extern "C" double Sin(handle_t hBinding, double x)
 {
-    int count = 0;
-
-    for (int i = 0; str[i]; i++)
-    {
-        char c = tolower(str[i]);
-
-        if (c == 'a' || c == 'e' ||
-            c == 'i' || c == 'o' ||
-            c == 'u')
-        {
-            count++;
-        }
-    }
-
-    cout << "CountVowels called\n";
-
-    return count;
+    cout << "Sin(" << x << ") called\n";
+    return sin(x);
 }
 
-extern "C" int CountWords(
-    handle_t hBinding,
-    unsigned char* str)
+extern "C" double Cos(handle_t hBinding, double x)
 {
-    int count = 0;
-    bool inWord = false;
-
-    for (int i = 0; str[i]; i++)
-    {
-        if (!isspace(str[i]))
-        {
-            if (!inWord)
-            {
-                count++;
-                inWord = true;
-            }
-        }
-        else
-        {
-            inWord = false;
-        }
-    }
-
-    cout << "CountWords called\n";
-
-    return count;
+    cout << "Cos(" << x << ") called\n";
+    return cos(x);
 }
 
-extern "C" boolean IsPalindrome(
-    handle_t hBinding,
-    unsigned char* str)
+extern "C" double Sqrt(handle_t hBinding, double x)
 {
-    string s((char*)str);
+    cout << "Sqrt(" << x << ") called\n";
+    return sqrt(x);
+}
 
-    string rev = s;
-
-    reverse(rev.begin(), rev.end());
-
-    boolean result = (s == rev);
-
-    cout << "IsPalindrome called\n";
-
-    return result;
+extern "C" double Pow(handle_t hBinding, double x, double y)
+{
+    cout << "Pow(" << x << ", " << y << ") called\n";
+    return pow(x, y);
 }
 
 int main()
 {
-    cout << "RPC Server Start...\n";
+    cout << "RPC Math Server Start...\n";
 
-    RPC_STATUS status;
-
-    status = RpcServerUseProtseqEp(
+    RPC_STATUS status = RpcServerUseProtseqEp(
         (RPC_WSTR)L"ncacn_ip_tcp",
         RPC_C_PROTSEQ_MAX_REQS_DEFAULT,
         (RPC_WSTR)L"4545",
@@ -111,7 +71,7 @@ int main()
 
     if (status) return status;
 
-    RpcServerListen(1, RPC_C_LISTEN_MAX_CALLS_DEFAULT, FALSE);
+    status = RpcServerListen(1, RPC_C_LISTEN_MAX_CALLS_DEFAULT, FALSE);
 
     if (status)
     {
@@ -120,10 +80,4 @@ int main()
     }
 
     return 0;
-}
-
-
-void __RPC_USER midl_user_free(void* p)
-{
-    free(p);
 }
