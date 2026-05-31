@@ -7,7 +7,7 @@
 /* at Tue Jan 19 05:14:07 2038
  */
 /* Compiler settings for LR4_1-master\LR4_1-master\ConsoleApplication7\stringrpc.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=IA64 8.01.0628 
+    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0628 
     protocol : all , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -16,7 +16,7 @@
 */
 /* @@MIDL_FILE_HEADING(  ) */
 
-#if defined(_M_IA64) 
+#if defined(_M_AMD64)
 
 
 #if _MSC_VER >= 1200
@@ -245,10 +245,10 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 			0x48,		/* Old Flags:  */
 /*  2 */	NdrFcLong( 0x0 ),	/* 0 */
 /*  6 */	NdrFcShort( 0x0 ),	/* 0 */
-/*  8 */	NdrFcShort( 0x18 ),	/* ia64 Stack size/offset = 24 */
+/*  8 */	NdrFcShort( 0x18 ),	/* X64 Stack size/offset = 24 */
 /* 10 */	0x32,		/* FC_BIND_PRIMITIVE */
 			0x0,		/* 0 */
-/* 12 */	NdrFcShort( 0x0 ),	/* ia64 Stack size/offset = 0 */
+/* 12 */	NdrFcShort( 0x0 ),	/* X64 Stack size/offset = 0 */
 /* 14 */	NdrFcShort( 0x10 ),	/* 16 */
 /* 16 */	NdrFcShort( 0x24 ),	/* 36 */
 /* 18 */	0x40,		/* Oi2 Flags:  has ext, */
@@ -263,14 +263,14 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 	/* Parameter x */
 
 /* 30 */	NdrFcShort( 0x48 ),	/* Flags:  in, base type, */
-/* 32 */	NdrFcShort( 0x8 ),	/* ia64 Stack size/offset = 8 */
+/* 32 */	NdrFcShort( 0x8 ),	/* X64 Stack size/offset = 8 */
 /* 34 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
 	/* Parameter _RetVal */
 
 /* 36 */	NdrFcShort( 0x2170 ),	/* Flags:  out, return, base type, simple ref, srv alloc size=8 */
-/* 38 */	NdrFcShort( 0x10 ),	/* ia64 Stack size/offset = 16 */
+/* 38 */	NdrFcShort( 0x10 ),	/* X64 Stack size/offset = 16 */
 /* 40 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
@@ -280,10 +280,10 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 			0x48,		/* Old Flags:  */
 /* 44 */	NdrFcLong( 0x0 ),	/* 0 */
 /* 48 */	NdrFcShort( 0x1 ),	/* 1 */
-/* 50 */	NdrFcShort( 0x18 ),	/* ia64 Stack size/offset = 24 */
+/* 50 */	NdrFcShort( 0x18 ),	/* X64 Stack size/offset = 24 */
 /* 52 */	0x32,		/* FC_BIND_PRIMITIVE */
 			0x0,		/* 0 */
-/* 54 */	NdrFcShort( 0x0 ),	/* ia64 Stack size/offset = 0 */
+/* 54 */	NdrFcShort( 0x0 ),	/* X64 Stack size/offset = 0 */
 /* 56 */	NdrFcShort( 0x10 ),	/* 16 */
 /* 58 */	NdrFcShort( 0x24 ),	/* 36 */
 /* 60 */	0x40,		/* Oi2 Flags:  has ext, */
@@ -298,14 +298,14 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 	/* Parameter x */
 
 /* 72 */	NdrFcShort( 0x48 ),	/* Flags:  in, base type, */
-/* 74 */	NdrFcShort( 0x8 ),	/* ia64 Stack size/offset = 8 */
+/* 74 */	NdrFcShort( 0x8 ),	/* X64 Stack size/offset = 8 */
 /* 76 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
 	/* Parameter _RetVal */
 
 /* 78 */	NdrFcShort( 0x2170 ),	/* Flags:  out, return, base type, simple ref, srv alloc size=8 */
-/* 80 */	NdrFcShort( 0x10 ),	/* ia64 Stack size/offset = 16 */
+/* 80 */	NdrFcShort( 0x10 ),	/* X64 Stack size/offset = 16 */
 /* 82 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
@@ -315,10 +315,10 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 			0x48,		/* Old Flags:  */
 /* 86 */	NdrFcLong( 0x0 ),	/* 0 */
 /* 90 */	NdrFcShort( 0x2 ),	/* 2 */
-/* 92 */	NdrFcShort( 0x18 ),	/* ia64 Stack size/offset = 24 */
+/* 92 */	NdrFcShort( 0x18 ),	/* X64 Stack size/offset = 24 */
 /* 94 */	0x32,		/* FC_BIND_PRIMITIVE */
 			0x0,		/* 0 */
-/* 96 */	NdrFcShort( 0x0 ),	/* ia64 Stack size/offset = 0 */
+/* 96 */	NdrFcShort( 0x0 ),	/* X64 Stack size/offset = 0 */
 /* 98 */	NdrFcShort( 0x10 ),	/* 16 */
 /* 100 */	NdrFcShort( 0x24 ),	/* 36 */
 /* 102 */	0x40,		/* Oi2 Flags:  has ext, */
@@ -333,14 +333,14 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 	/* Parameter x */
 
 /* 114 */	NdrFcShort( 0x48 ),	/* Flags:  in, base type, */
-/* 116 */	NdrFcShort( 0x8 ),	/* ia64 Stack size/offset = 8 */
+/* 116 */	NdrFcShort( 0x8 ),	/* X64 Stack size/offset = 8 */
 /* 118 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
 	/* Parameter _RetVal */
 
 /* 120 */	NdrFcShort( 0x2170 ),	/* Flags:  out, return, base type, simple ref, srv alloc size=8 */
-/* 122 */	NdrFcShort( 0x10 ),	/* ia64 Stack size/offset = 16 */
+/* 122 */	NdrFcShort( 0x10 ),	/* X64 Stack size/offset = 16 */
 /* 124 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
@@ -350,10 +350,10 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 			0x48,		/* Old Flags:  */
 /* 128 */	NdrFcLong( 0x0 ),	/* 0 */
 /* 132 */	NdrFcShort( 0x3 ),	/* 3 */
-/* 134 */	NdrFcShort( 0x20 ),	/* ia64 Stack size/offset = 32 */
+/* 134 */	NdrFcShort( 0x20 ),	/* X64 Stack size/offset = 32 */
 /* 136 */	0x32,		/* FC_BIND_PRIMITIVE */
 			0x0,		/* 0 */
-/* 138 */	NdrFcShort( 0x0 ),	/* ia64 Stack size/offset = 0 */
+/* 138 */	NdrFcShort( 0x0 ),	/* X64 Stack size/offset = 0 */
 /* 140 */	NdrFcShort( 0x20 ),	/* 32 */
 /* 142 */	NdrFcShort( 0x24 ),	/* 36 */
 /* 144 */	0x40,		/* Oi2 Flags:  has ext, */
@@ -368,21 +368,21 @@ static const stringrpc_MIDL_PROC_FORMAT_STRING stringrpc__MIDL_ProcFormatString 
 	/* Parameter x */
 
 /* 156 */	NdrFcShort( 0x48 ),	/* Flags:  in, base type, */
-/* 158 */	NdrFcShort( 0x8 ),	/* ia64 Stack size/offset = 8 */
+/* 158 */	NdrFcShort( 0x8 ),	/* X64 Stack size/offset = 8 */
 /* 160 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
 	/* Parameter y */
 
 /* 162 */	NdrFcShort( 0x48 ),	/* Flags:  in, base type, */
-/* 164 */	NdrFcShort( 0x10 ),	/* ia64 Stack size/offset = 16 */
+/* 164 */	NdrFcShort( 0x10 ),	/* X64 Stack size/offset = 16 */
 /* 166 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
 	/* Parameter _RetVal */
 
 /* 168 */	NdrFcShort( 0x2170 ),	/* Flags:  out, return, base type, simple ref, srv alloc size=8 */
-/* 170 */	NdrFcShort( 0x18 ),	/* ia64 Stack size/offset = 24 */
+/* 170 */	NdrFcShort( 0x18 ),	/* X64 Stack size/offset = 24 */
 /* 172 */	0xc,		/* FC_DOUBLE */
 			0x0,		/* 0 */
 
@@ -414,7 +414,7 @@ static const unsigned short stringrpc_FormatStringOffsetTable[] =
 
 
 
-#endif /* defined(_M_IA64) */
+#endif /* defined(_M_AMD64)*/
 
 
 
@@ -425,7 +425,7 @@ static const unsigned short stringrpc_FormatStringOffsetTable[] =
 /* at Tue Jan 19 05:14:07 2038
  */
 /* Compiler settings for LR4_1-master\LR4_1-master\ConsoleApplication7\stringrpc.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=IA64 8.01.0628 
+    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.01.0628 
     protocol : all , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -434,7 +434,7 @@ static const unsigned short stringrpc_FormatStringOffsetTable[] =
 */
 /* @@MIDL_FILE_HEADING(  ) */
 
-#if defined(_M_IA64) 
+#if defined(_M_AMD64)
 
 
 
@@ -766,5 +766,5 @@ static const MIDL_STUBLESS_PROXY_INFO stringrpc_ProxyInfo =
 #endif
 
 
-#endif /* defined(_M_IA64) */
+#endif /* defined(_M_AMD64)*/
 
